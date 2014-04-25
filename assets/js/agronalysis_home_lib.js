@@ -748,9 +748,10 @@ var AGRONALYSIS_HOME_LIB = (function(){
             }
 
             function defaultText(){
-                d3.select("#header_data")
+                /*d3.select("#header_data")
                     .text("Overview Definition of the Food System");
-
+                */
+                d3.select("#header_data").text("");
                 d3.select("#content_data")
                     .text("The food system consists of the interconnected processes and resources required to grow, " +
                         "ship, process, and deliver the food we eat. This system can be broken down into segments of " +
