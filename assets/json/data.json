@@ -1,0 +1,113 @@
+{
+    "name": "Agronalysis",
+    "id" : "F0",
+        "children": [
+        {
+            "id" : "F1",
+            "name" : "LAND USE PLANNING",
+            "header_text" : "LAND USE PLANNING DEFINES AND DESIGNATES ZONES FOR FOOD GROWING AT ALL SCALES",
+            "content_text" : "There are currently 150 people and 37 projects and 5 courses that deal with this topic.",
+            "children": [
+                {
+                    "id" : "F1_C1",
+                    "name" : "COURSES",
+                    "header_text" : "COURSES",
+                    "content_text" : "Statistic on course",
+                    "children" : [
+                        {
+                            "id" : "F1_C1_I1",
+                            "name" : "name",
+                            "header_text" : "COURSES",
+                            "content_text" : "Statistic on course",
+                            "size" : 5,
+                            "courses" : []
+                        }
+                    ]
+                },
+                {
+                    "id" : "F1_P1",
+                    "name" : "PEOPLE",
+                    "header_text" : "PEOPLE",
+                    "content_text" : "Statistic on people",
+                    "children" : [
+                        {
+                            "id" : "F1_P1_I1",
+                            "name" : "name",
+                            "header_text" : "PEOPLE",
+                            "content_text" : "Statistic on people",
+                            "size" : 3
+                        }
+                    ]
+                },
+                {
+                    "id" : "F1_R1",
+                    "name" : "PROJECTS",
+                    "header_text" : "PROJECTS",
+                    "content_text" : "Statistic on projects",
+                    "children" : [
+                        {
+                            "id" : "F1_R1_I1",
+                            "name" : "name",
+                            "header_text" : "PROJECTS",
+                            "content_text" : "Statistic on projects",
+                            "size" : 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id" : "F2",
+            "name" : "SUITABILITY & SOIL SCIENCE",
+            "header_text" : "SUITABILITY & SOIL SCIENCE",
+            "content_text" : "Description on main topic",
+            "children": [
+                {
+                    "id" : "F2_C1",
+                    "name" : "COURSES",
+                    "header_text" : "COURSES",
+                    "content_text" : "Statistic on course",
+                    "children" : [
+                        {
+                            "id" : "F2_C1_I1",
+                            "name" : "name",
+                            "header_text" : "COURSES",
+                            "content_text" : "Statistic on course",
+                            "size" : 5
+                        }
+                    ]
+                },
+                {
+                    "id" : "F2_P1",
+                    "name" : "PEOPLE",
+                    "header_text" : "PEOPLE",
+                    "content_text" : "Statistic on people",
+                    "children" : [
+                        {
+                            "id" : "F2_P1_I1",
+                            "name" : "name",
+                            "header_text" : "PEOPLE",
+                            "content_text" : "Statistic on people",
+                            "size" : 2
+                        }
+                    ]
+                },
+                {
+                    "id" : "F2_R1",
+                    "name" : "PROJECTS",
+                    "header_text" : "PROJECTS",
+                    "content_text" : "Statistic on projects",
+                    "children" : [
+                        {
+                            "id" : "F2_R1_I1",
+                            "name" : "name",
+                            "header_text" : "PROJECTS",
+                            "content_text" : "Statistic on projects",
+                            "size" : 3
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

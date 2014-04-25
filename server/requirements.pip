@@ -1,0 +1,4 @@
+numpy==1.7.0
+pandas==0.11.0
+configparser==3.3.0r2
+flask==0.8
