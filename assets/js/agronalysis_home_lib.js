@@ -19,8 +19,7 @@ var AGRONALYSIS_HOME_LIB = (function(){
          this.cdt_state = [];
          //this.chart_object_name = "CHART_OBJECT";
          //this.chart_object_URL = "http://152.46.20.113:5000/chartdata";
-        this.server = SEEDINGFOODSTUDY_SERVERS.prod;
-        this.chart_object_URL = this.server+"/chartdata";
+        this.server = SEEDINGFOODSTUDY_SERVERS.prod;              this.chart_object_URL = this.server+"/chartdata";
         this.crossrefence_data_URL = this.server+"/crossref/";
         this.cdt_data_URL = this.server+"/cdt";
         this.get_content_data_URL = this.server+"/contentdata/"
@@ -455,12 +454,24 @@ var AGRONALYSIS_HOME_LIB = (function(){
 
                         divs.append("div")
                             .text(function(d){
-                                return d.i_header_text;
+                                if(d.i_header_text == "" || d.i_header_text == "0"){
+                                    return "";
+                                }else if(d.i_header_text.length>60){
+                                    return d.i_header_text.substring(0,60)+" ...";
+                                }else{
+                                    return d.i_header_text;
+                                }
                             });
 
                         divs.append("div")
                             .text(function(d){
-                                return d.i_content_text;
+                                if(d.i_content_text == "" || d.i_content_text == "0"){
+                                    return "";
+                                }else if(d.i_content_text.length>60){
+                                    return d.i_content_text.substring(0,60)+" ...";
+                                }else{
+                                    return d.i_content_text;
+                                }
                             });
 
 
@@ -471,7 +482,7 @@ var AGRONALYSIS_HOME_LIB = (function(){
 
                         $(that.als_list_id).als({
                             visible_items: 3,
-                            scrolling_items: 1,
+                            scrolling_items: 2,
                             orientation: "vertical"
                         });
 
@@ -617,6 +628,14 @@ var AGRONALYSIS_HOME_LIB = (function(){
                         if(d.i_degree_text != "" && d.i_degree_text != "0"){
                             block.find("#degree_title").text("Degrees: ");
                             block.find("#degree").text(d.i_degree_text);
+                        }
+                        if(d.i_department != "" && d.i_department != "0"){
+                            block.find("#dept_title").text("Department: ");
+                            block.find("#dept").text(d.i_department);
+                        }
+                        if(d.i_college != "" && d.i_college != "0"){
+                            block.find("#coll_title").text("College: ");
+                            block.find("#coll").text(d.i_college);
                         }
                         if(d.i_courses.length > 0){
                             block.find("#course_title").text("Courses: ");

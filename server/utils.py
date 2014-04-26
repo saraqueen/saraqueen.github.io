@@ -8,7 +8,7 @@ from dataset import get_Wrapper, get_Fields, get_Projects, get_Courses, get_CDT_
 config = ConfigParser.RawConfigParser()
 config.read('sdf.cfg')
 
-name_coll = ["Q3_1_TEXT", "Q3_2_TEXT","Q3_5_TEXT"]
+name_coll = ["Q3_1_TEXT", "Q3_2_TEXT","Q3_5_TEXT","Q3_3_TEXT","Q3_4_TEXT"]
 
 project_title_coll = [["Q38_1_TEXT","Q38_4_TEXT","Q38_3_TEXT","Q38_5_TEXT","Q38_6_TEXT","Q40_1_TEXT"], 
 ["Q46_1_TEXT","Q46_4_TEXT","Q46_3_TEXT","Q46_5_TEXT","Q46_6_TEXT","Q48_1_TEXT"], ["Q54_1_TEXT","Q54_4_TEXT","Q54_3_TEXT","Q54_5_TEXT","Q54_6_TEXT","Q56_1_TEXT"],
@@ -47,7 +47,7 @@ ultimate_cross_ref_dict = {}
 ultimate_cross_ref_names = {}
 ultimate_cross_ref_cdt= {}
 
-dir = config.get('sdf', 'sdf-data-path')
+dir = config.get('prod', 'sdf-data-path')
 
 
 def initialize():
@@ -67,7 +67,7 @@ def initialize():
 
 
 def load_data_from_csv():
-    chart_data = pd.read_csv(dir + '/Seeding_Food_Studies_Main.csv', sep=',', index_col=None, header=0);
+    chart_data = pd.read_csv(dir + 'Seeding_Food_Studies_Main.csv', sep=',', index_col=None, header=0);
     return chart_data 
 
 
@@ -80,7 +80,7 @@ def getPeopleForField(fieldId):
 	corse_title_coll[2][0],corse_title_coll[2][1],corse_title_coll[3][0],corse_title_coll[3][1],corse_title_coll[4][0],
 	corse_title_coll[4][1],project_title_coll[0][0],project_title_coll[0][1],project_title_coll[1][0],project_title_coll[1][1],
 	project_title_coll[2][0],project_title_coll[2][1],project_title_coll[3][0],project_title_coll[3][1],project_title_coll[4][0],
-	project_title_coll[4][1]]]
+	project_title_coll[4][1],name_coll[3],name_coll[4]]]
 
 	tmp = tmp.dropna(subset=[pplfocus[get_No_FieldIds(fieldId)],name_coll[0]])
 	tmp = tmp.fillna("0");
@@ -123,7 +123,9 @@ def getPeopleForField(fieldId):
 		"i_degree_text" : row[11],
 		"i_focus" : f,
 		"i_courses" : c,
-		"i_projects" : p
+		"i_projects" : p,
+		"i_department": row[41],
+		"i_college": row[42]
 		}
 		s = []
 		for i in xrange(3,11):
@@ -256,7 +258,7 @@ def get_chart_data():
 	for field in wrap:
 
 		child = field["children"]
-		child[0]["children"][0]["content"] = getPeopleForField(field["id"])
+		child[0]["children"][0]["content"] = sorted(getPeopleForField(field["id"]),key=lambda k: k['i_header_text'])
 		s = len(child[0]["children"][0]["content"])
 		child[0]["children"][0]["size"] = s
 		child[0]["header_text"] = getNameforId(field["id"])
@@ -266,7 +268,7 @@ def get_chart_data():
 		child[0]["children"][0]["mid_text"] = "People"
 		child[0]["children"][0]["content_text"] = "This survey uncovered "+str(s)+" people whose work relates to "+getNameforId(field["id"])
 
-		child[1]["children"][0]["content"] = getCoursesForField(field["id"])
+		child[1]["children"][0]["content"] = sorted(getCoursesForField(field["id"]),key=lambda k: k['i_header_text'])
 		s = len(child[1]["children"][0]["content"])
 		child[1]["children"][0]["size"] = s
 		child[1]["header_text"] = getNameforId(field["id"])
@@ -276,7 +278,7 @@ def get_chart_data():
 		child[1]["children"][0]["mid_text"] = "Courses"
 		child[1]["children"][0]["content_text"] = "This survey uncovered "+str(s)+" courses exploring "+getNameforId(field["id"])
 
-		child[2]["children"][0]["content"] = getProjectsForField(field["id"])
+		child[2]["children"][0]["content"] = sorted(getProjectsForField(field["id"]),key=lambda k: k['i_header_text'])
 		s = len(child[2]["children"][0]["content"])
 		child[2]["children"][0]["size"] = s
 		child[2]["header_text"] = getNameforId(field["id"])

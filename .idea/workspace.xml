@@ -6,15 +6,17 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WEB-INF/views/agronalysis_home.html" afterPath="$PROJECT_DIR$/WEB-INF/views/agronalysis_home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/less/agronalysis_home.less" afterPath="$PROJECT_DIR$/assets/less/agronalysis_home.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/agronalysis_home_lib.js" afterPath="$PROJECT_DIR$/assets/js/agronalysis_home_lib.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/sdf.cfg" afterPath="$PROJECT_DIR$/server/sdf.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/utils.py" afterPath="$PROJECT_DIR$/server/utils.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Agronalysis.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/agroanalysis_home.html" changelist="36af26e7-90b7-4207-a136-00030fe3f2d2" time="1391918771671" ignored="false" />
-    <file path="/agronalysis_home.less" changelist="36af26e7-90b7-4207-a136-00030fe3f2d2" time="1398466984489" ignored="false" />
+    <file path="/agronalysis_home.less" changelist="36af26e7-90b7-4207-a136-00030fe3f2d2" time="1398474686383" ignored="false" />
     <file path="/agronalysis_home_main.js" changelist="36af26e7-90b7-4207-a136-00030fe3f2d2" time="1398370801244" ignored="false" />
-    <file path="/agronalysis_home.html" changelist="36af26e7-90b7-4207-a136-00030fe3f2d2" time="1398466179524" ignored="false" />
-    <file path="/agronalysis_home_lib.js" changelist="36af26e7-90b7-4207-a136-00030fe3f2d2" time="1398466377866" ignored="false" />
+    <file path="/agronalysis_home.html" changelist="36af26e7-90b7-4207-a136-00030fe3f2d2" time="1398472558960" ignored="false" />
+    <file path="/agronalysis_home_lib.js" changelist="36af26e7-90b7-4207-a136-00030fe3f2d2" time="1398477260689" ignored="false" />
     <file path="/Dummy.txt" changelist="36af26e7-90b7-4207-a136-00030fe3f2d2" time="1398465090886" ignored="false" />
     <file path="/database.js" changelist="36af26e7-90b7-4207-a136-00030fe3f2d2" time="1394600214552" ignored="false" />
     <file path="/agronalysis_feedback.html" changelist="36af26e7-90b7-4207-a136-00030fe3f2d2" time="1392583638694" ignored="false" />
@@ -100,10 +102,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="agronalysis_home.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="agronalysis_home.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WEB-INF/views/agronalysis_home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="52" selection-start="6009" selection-end="6009" vertical-scroll-proportion="-9.807693">
+            <state line="213" column="74" selection-start="11223" selection-end="11223" vertical-scroll-proportion="0.6997636">
               <folding />
             </state>
           </provider>
@@ -112,16 +114,16 @@
       <file leaf-file-name="agronalysis_home_lib.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/agronalysis_home_lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="753" column="51" selection-start="29996" selection-end="29996" vertical-scroll-proportion="0.0">
+            <state line="21" column="52" selection-start="859" selection-end="859" vertical-scroll-proportion="-9.52">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="agronalysis_home.less" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="agronalysis_home.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/less/agronalysis_home.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="197" column="28" selection-start="4372" selection-end="4372" vertical-scroll-proportion="0.7369942">
+            <state line="374" column="26" selection-start="7640" selection-end="7640" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -166,9 +168,10 @@
         <option value="$PROJECT_DIR$/server/sdf.cfg" />
         <option value="$PROJECT_DIR$/assets/json/data.json" />
         <option value="$PROJECT_DIR$/assets/js/agronalysis_home_main.js" />
+        <option value="$PROJECT_DIR$/assets/js/oneFingerScroll.js" />
+        <option value="$PROJECT_DIR$/assets/less/agronalysis_home.less" />
         <option value="$PROJECT_DIR$/assets/js/agronalysis_home_lib.js" />
         <option value="$PROJECT_DIR$/WEB-INF/views/agronalysis_home.html" />
-        <option value="$PROJECT_DIR$/assets/less/agronalysis_home.less" />
       </list>
     </option>
   </component>
@@ -238,6 +241,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Agronalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saraqueen.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Agronalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saraqueen.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -313,12 +348,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32033426" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24984147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14648066" sideWeight="0.6392758" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14648066" sideWeight="0.67966574" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14648066" sideWeight="0.3593315" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -327,7 +363,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.321727" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -401,11 +436,6 @@
         <state line="1" column="29" selection-start="30" selection-end="46" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="29" selection-start="30" selection-end="46" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/views/agronalysis_feedback.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="24" selection-start="2343" selection-end="2343" vertical-scroll-proportion="0.6519685" />
@@ -458,6 +488,13 @@
         <state line="21" column="43" selection-start="916" selection-end="916" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/less/agronalysis_home.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="374" column="26" selection-start="7640" selection-end="7640" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/agronalysis_home_main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="34" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
@@ -467,21 +504,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/agronalysis_home_lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="753" column="51" selection-start="29996" selection-end="29996" vertical-scroll-proportion="0.0">
+        <state line="21" column="52" selection-start="859" selection-end="859" vertical-scroll-proportion="-9.52">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/views/agronalysis_home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="52" selection-start="6009" selection-end="6009" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/less/agronalysis_home.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="197" column="28" selection-start="4372" selection-end="4372" vertical-scroll-proportion="0.7369942">
+        <state line="213" column="74" selection-start="11223" selection-end="11223" vertical-scroll-proportion="0.6997636">
           <folding />
         </state>
       </provider>
