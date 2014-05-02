@@ -19,7 +19,8 @@ var AGRONALYSIS_HOME_LIB = (function(){
          this.cdt_state = [];
          //this.chart_object_name = "CHART_OBJECT";
          //this.chart_object_URL = "http://152.46.20.113:5000/chartdata";
-        this.server = SEEDINGFOODSTUDY_SERVERS.prod;              this.chart_object_URL = this.server+"/chartdata";
+        this.server = SEEDINGFOODSTUDY_SERVERS.prod;
+        this.chart_object_URL = this.server+"/chartdata";
         this.crossrefence_data_URL = this.server+"/crossref/";
         this.cdt_data_URL = this.server+"/cdt";
         this.get_content_data_URL = this.server+"/contentdata/"
