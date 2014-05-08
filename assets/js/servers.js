@@ -7,4 +7,4 @@
  */
 var SEEDINGFOODSTUDY_SERVERS = {}
 SEEDINGFOODSTUDY_SERVERS.dev = "http://127.0.0.1:5000";
-SEEDINGFOODSTUDY_SERVERS.prod = "http://seedingfoodstudy-saraqueen.rhcloud.com/";
+SEEDINGFOODSTUDY_SERVERS.prod = "http://seedingfoodstudywebservice-saraqueen.rhcloud.com";

@@ -37,9 +37,12 @@ var AGRONALYSIS_HOME_LIB = (function(){
 
         drawFieldChart : function(){
         var values = {
-            width: 780,
+            width: $('.center_side').width(),
             height: 740
         };
+            var left = (values.width/2 - 128) + "px";
+            $('#whenhover').css('left',left);
+            $('#whenclick').css('left',left);
             this.fieldChart(values);
 
         },
@@ -272,7 +275,7 @@ var AGRONALYSIS_HOME_LIB = (function(){
             }
 
             d3.select("#container").on("mouseleave", mouseleave);
-            d3.select(".btn-circle").on("click", mousedblclick);
+            d3.select(".reset_btn").on("click", mousedblclick);
             cdtclicked();
 
 
@@ -773,10 +776,7 @@ var AGRONALYSIS_HOME_LIB = (function(){
                 */
                 d3.select("#header_data").text("");
                 d3.select("#content_data")
-                    .text("The food system consists of the interconnected processes and resources required to grow, " +
-                        "ship, process, and deliver the food we eat. This system can be broken down into segments of " +
-                        "activity, each an area of study its own right, from food production to waste management and " +
-                        "all the linking elements in between.");
+                    .text("The food system consists of the interconnected processes and resources required to grow, ship, process and deliver the food we eat. This system can be broken down into segments of activity, each an area of study in its own right, from food production to waste management and all the linking elements in between. Food studies efforts taking place across NCSU’s campus are categorized here according to the segment(s) of activity which they engage.");
 
                 d3.select("#mid_data")
                     .text("");
