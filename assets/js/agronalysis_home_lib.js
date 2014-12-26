@@ -215,8 +215,7 @@ var AGRONALYSIS_HOME_LIB = (function(){
                 //nodes = partition.nodes(root);//.reverse();
                 //console.log(root);
                 if(error != null){
-                    console.log(error);
-                    return;
+                    console.log("Error fetching chartdata - "+error);
                 }
 
                 d3.select("#load").style("visibility","hidden");
@@ -237,10 +236,6 @@ var AGRONALYSIS_HOME_LIB = (function(){
                                 .style("opacity",1)
                                 .on("mouseover",mouseover)
                                 .on("click",mouseclick);
-
-
-                defaultText();
-
 
 
                  svg.selectAll("g")
@@ -274,6 +269,7 @@ var AGRONALYSIS_HOME_LIB = (function(){
                  }).on("mouseover",mouseover);
 
             }
+            defaultText();
 
             d3.select("#container").on("mouseleave", mouseleave);
             d3.select(".reset_btn").on("click", mousedblclick);
