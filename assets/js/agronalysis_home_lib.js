@@ -604,8 +604,6 @@ var AGRONALYSIS_HOME_LIB = (function(){
                         .style("fill", "#CCCCCC")
                         .style("stroke", "#fff")
                         .style("opacity",1);
-
-
                 });
             }
             // Given a node in a partition layout, return an array of all of its ancestor
