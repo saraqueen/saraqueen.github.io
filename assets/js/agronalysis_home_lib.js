@@ -216,6 +216,7 @@ var AGRONALYSIS_HOME_LIB = (function(){
                 //console.log(root);
                 if(error != null){
                     console.log(error);
+                    return;
                 }
 
                 d3.select("#load").style("visibility","hidden");
